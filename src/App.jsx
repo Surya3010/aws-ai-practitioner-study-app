@@ -1728,9 +1728,9 @@ ML-powered **sensitive data discovery** for S3:
 - Continuous drift detection: "When did someone change this security group?"
 
 **Useful Config rules for AI/ML:**
-- `s3-bucket-server-side-encryption-enabled`
-- `sagemaker-endpoint-configuration-kms-key-configured`
-- `restricted-ssh` — no open SSH ports on EC2 (ML training nodes)
+- s3-bucket-server-side-encryption-enabled
+- sagemaker-endpoint-configuration-kms-key-configured
+- restricted-ssh — no open SSH ports on EC2 (ML training nodes)
 
 ---
 
@@ -1839,11 +1839,11 @@ AWS Region: us-east-1
 | **Interface Endpoint (PrivateLink)** | 100+ services (Bedrock, SageMaker, etc.) | Hourly + data charge | ENI in your subnet |
 
 **For ML/AI, create Interface Endpoints for:**
-- `bedrock-runtime` — invoke Bedrock models privately
-- `sagemaker.api` — SageMaker API calls
-- `sagemaker.runtime` — SageMaker endpoint inference
-- `s3` — Use Gateway Endpoint (free!)
-- `ecr.api` + `ecr.dkr` — pull container images for training
+- bedrock-runtime — invoke Bedrock models privately
+- sagemaker.api — SageMaker API calls
+- sagemaker.runtime — SageMaker endpoint inference
+- s3 — Use Gateway Endpoint (free!)
+- ecr.api + ecr.dkr — pull container images for training
 
 ---
 
